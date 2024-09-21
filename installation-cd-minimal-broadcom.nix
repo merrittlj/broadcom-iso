@@ -6,4 +6,5 @@
   
   boot.kernelModules = [ "kvm-intel" "wl" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
+  nixpkgs.config.allowUnfree = true;
 }
